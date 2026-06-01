@@ -36,15 +36,6 @@ buildExpired = false
   hideSummary = false
   showtoc = true
 
-  [params.homeInfoParams]
-    Title = "Hey 👋 I'm Ruiran Yu"
-    Content = """
-Senior AI Data Scientist @ Procter & Gamble.
-
-Passionate about applying AI/ML to real-world supply chain challenges.
-
-Writing about machine learning, optimization, data engineering, and life.
-"""
 
   [[params.socialIcons]]
     name = "github"

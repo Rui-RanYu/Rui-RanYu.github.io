@@ -1,0 +1,369 @@
+/* ============================================
+   Custom Styles for Ruiran Yu's Personal Blog
+   Making it COOL and Modern! 🚀
+   ============================================ */
+
+/* Modern Gradient Background */
+:root {
+    --gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --gradient-2: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    --gradient-3: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    --gradient-accent: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+    --shadow-elevation: 0 10px 40px rgba(0, 0, 0, 0.1);
+    --shadow-hover: 0 15px 50px rgba(0, 0, 0, 0.15);
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Enhanced Header with Backdrop Blur */
+.header {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.8) !important;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.dark .header {
+    background: rgba(0, 0, 0, 0.8) !important;
+}
+
+/* Animated Logo/Title */
+.logo {
+    font-weight: 700;
+    background: var(--gradient-1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    transition: all 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+    filter: brightness(1.2);
+}
+
+/* Cool Profile Image with Glow Effect */
+.profile-image img,
+.about-page img[alt="Ruiran Yu"] {
+    border-radius: 20px !important;
+    box-shadow: 0 20px 60px rgba(102, 126, 234, 0.4);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 3px solid transparent;
+    background: var(--gradient-1);
+    background-clip: padding-box;
+}
+
+.profile-image img:hover,
+.about-page img[alt="Ruiran Yu"]:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 30px 80px rgba(102, 126, 234, 0.6);
+}
+
+/* Home Info Section with Gradient */
+.home-info {
+    position: relative;
+    padding: 3rem 2rem;
+    border-radius: 20px;
+    background: var(--gradient-1);
+    color: white !important;
+    box-shadow: var(--shadow-elevation);
+    transition: all 0.3s ease;
+}
+
+.home-info:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+.home-info .entry-content {
+    color: rgba(255, 255, 255, 0.95) !important;
+}
+
+/* Enhanced Cards/Posts */
+.post-entry {
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    position: relative;
+}
+
+.post-entry::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--gradient-1);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.post-entry:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15);
+}
+
+.post-entry:hover::before {
+    transform: scaleX(1);
+}
+
+/* Animated Buttons */
+.button,
+button,
+.post-entry .entry-footer a {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+}
+
+.button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+}
+
+.button:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+/* Social Icons with Gradient Hover */
+.social-icons a {
+    transition: all 0.3s ease;
+    border-radius: 10px;
+}
+
+.social-icons a:hover {
+    background: var(--gradient-1);
+    color: white !important;
+    transform: translateY(-3px) scale(1.1);
+    box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+}
+
+/* Enhanced Headings */
+h1, h2, h3 {
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background: var(--gradient-1);
+    border-radius: 2px;
+}
+
+/* Research Publications Styling */
+.post-content h3 {
+    margin-top: 2rem;
+    padding: 1rem;
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+    border-left: 4px solid;
+    border-image: var(--gradient-1) 1;
+    border-radius: 8px;
+}
+
+/* Links with Gradient Underline */
+.post-content a {
+    position: relative;
+    color: #667eea;
+    text-decoration: none;
+    background: linear-gradient(to right, #667eea, #764ba2);
+    background-size: 0% 2px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    transition: background-size 0.3s ease;
+}
+
+.post-content a:hover {
+    background-size: 100% 2px;
+}
+
+/* Code Blocks Enhancement */
+code {
+    border-radius: 6px;
+    padding: 0.2rem 0.5rem;
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+    border: 1px solid rgba(102, 126, 234, 0.2);
+}
+
+pre code {
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Tags with Gradient */
+.post-tags a {
+    background: var(--gradient-1) !important;
+    color: white !important;
+    border-radius: 20px;
+    padding: 0.3rem 1rem;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.post-tags a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+/* Breadcrumbs Enhancement */
+.breadcrumbs a {
+    transition: all 0.3s ease;
+}
+
+.breadcrumbs a:hover {
+    color: #667eea;
+    transform: translateX(3px);
+}
+
+/* Table of Contents Styling */
+.toc {
+    border-radius: 15px;
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.05) 0%, rgba(118, 75, 162, 0.05) 100%);
+    border-left: 4px solid;
+    border-image: var(--gradient-1) 1;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Scroll to Top Button */
+#top-link {
+    background: var(--gradient-1) !important;
+    border-radius: 50%;
+    box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+    transition: all 0.3s ease;
+}
+
+#top-link:hover {
+    transform: translateY(-3px) scale(1.1);
+    box-shadow: 0 8px 30px rgba(102, 126, 234, 0.6);
+}
+
+/* Search Box Enhancement */
+#searchInput {
+    border-radius: 25px;
+    border: 2px solid transparent;
+    background: linear-gradient(white, white) padding-box,
+                var(--gradient-1) border-box;
+    transition: all 0.3s ease;
+}
+
+#searchInput:focus {
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+    transform: scale(1.02);
+}
+
+/* Footer Styling */
+.footer {
+    border-top: 1px solid rgba(102, 126, 234, 0.1);
+    background: linear-gradient(180deg, transparent 0%, rgba(102, 126, 234, 0.03) 100%);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.post-entry,
+.post-content > * {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Professional Experience Section */
+.post-content p strong {
+    color: #667eea;
+    font-weight: 700;
+}
+
+/* List Styling */
+.post-content ul li,
+.post-content ol li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.post-content ul li::before {
+    content: '▹';
+    position: absolute;
+    left: 0;
+    color: #667eea;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .home-info {
+        padding: 2rem 1.5rem;
+    }
+
+    .post-entry {
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* Dark Mode Enhancements */
+.dark .post-entry {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.dark .post-content h3 {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.2) 0%, rgba(118, 75, 162, 0.2) 100%);
+}
+
+.dark code {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.2) 0%, rgba(118, 75, 162, 0.2) 100%);
+    border-color: rgba(102, 126, 234, 0.3);
+}
+
+/* Loading Animation */
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.loading {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Selection Color */
+::selection {
+    background: rgba(102, 126, 234, 0.3);
+    color: inherit;
+}
+
+/* Smooth Transitions for Theme Switch */
+* {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
