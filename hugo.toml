@@ -1,5 +1,5 @@
 baseURL = "https://Rui-RanYu.github.io/"
-languageCode = "zh-cn"
+languageCode = "en"
 title = "Ruiran Yu's Home Page"
 theme = "PaperMod"
 
@@ -19,7 +19,7 @@ buildExpired = false
   env = "production"
   title = "Ruiran Yu's Home Page"
   description = "Senior AI Data Scientist @ P&G — Notes on AI, Supply Chain & Life"
-  keywords = ["Blog", "AI", "Data Science", "Supply Chain"]
+  keywords = ["Blog", "AI", "Data Science", "Supply Chain", "Research", "Optimization"]
   author = "Ruiran Yu"
   defaultTheme = "auto"
   ShowReadingTime = true
@@ -84,25 +84,30 @@ Writing about machine learning, optimization, data engineering, and life.
     url = "/posts/"
     weight = 1
   [[menu.main]]
+    identifier = "research"
+    name = "🔬 Research"
+    url = "/research/"
+    weight = 2
+  [[menu.main]]
     identifier = "categories"
     name = "📂 Categories"
     url = "/categories/"
-    weight = 2
+    weight = 3
   [[menu.main]]
     identifier = "tags"
     name = "🏷️ Tags"
     url = "/tags/"
-    weight = 3
+    weight = 4
   [[menu.main]]
     identifier = "about"
     name = "🙋 About"
     url = "/about/"
-    weight = 4
+    weight = 5
   [[menu.main]]
     identifier = "search"
     name = "🔍 Search"
     url = "/search/"
-    weight = 5
+    weight = 6
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
