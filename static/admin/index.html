@@ -4,11 +4,84 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="noindex" />
-  <title>Content Manager</title>
+  <title>Content Manager - Ruiran Yu's Blog</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    }
+    .container {
+      background: white;
+      padding: 3rem;
+      border-radius: 20px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+      max-width: 600px;
+      text-align: center;
+    }
+    h1 { color: #2c3e50; margin-bottom: 1rem; }
+    p { color: #666; line-height: 1.6; margin-bottom: 2rem; }
+    .btn {
+      display: inline-block;
+      padding: 12px 30px;
+      margin: 10px;
+      background: #667eea;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: all 0.3s;
+    }
+    .btn:hover {
+      background: #5568d3;
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(102,126,234,0.4);
+    }
+    .btn-secondary {
+      background: #34495e;
+    }
+    .btn-secondary:hover {
+      background: #2c3e50;
+    }
+    .note {
+      background: #f8f9fa;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
 </head>
 <body>
-  <!-- Include the script that builds the page and powers Decap CMS -->
-  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+  <div class="container">
+    <h1>📝 Content Management</h1>
+    <p>Choose how you'd like to edit your blog content:</p>
+
+    <a href="https://github.com/Rui-RanYu/Rui-RanYu.github.io/edit/main/content/about.md" class="btn" target="_blank">
+      ✏️ Edit About Page
+    </a>
+
+    <a href="https://github.com/Rui-RanYu/Rui-RanYu.github.io/edit/main/content/research/_index.md" class="btn" target="_blank">
+      🔬 Edit Research Page
+    </a>
+
+    <a href="https://github.com/Rui-RanYu/Rui-RanYu.github.io/tree/main/content/posts" class="btn btn-secondary" target="_blank">
+      📝 Manage Blog Posts
+    </a>
+
+    <div class="note">
+      💡 <strong>Quick Edit:</strong> Click any button above to edit directly on GitHub.
+      Changes will be automatically deployed to your site.
+      <br><br>
+      <strong>For Advanced CMS:</strong> We're working on setting up full CMS access.
+      Meanwhile, GitHub's built-in editor works great!
+    </div>
+  </div>
 </body>
 </html>
 
