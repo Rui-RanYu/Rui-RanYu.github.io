@@ -26,11 +26,11 @@ I am a Senior AI Data Scientist at Procter & Gamble, specializing in applying ar
 
 ## Education
 
-**Ph.D. in Software Engineering** | South China University of Technology (华南理工大学) | Software Engineering
+**Ph.D. in Software Engineering** | South China University of Technology | Software Engineering
 
-**M.S. in Software Engineering** | South China University of Technology (华南理工大学) | Software Engineering
+**M.S. in Software Engineering** | South China University of Technology | Software Engineering
 
-**B.S. in Software Engineering** | South China University of Technology (华南理工大学) | Software Engineering
+**B.S. in Software Engineering** | South China University of Technology | Software Engineering
 
 ## Research Interests
 
