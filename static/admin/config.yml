@@ -1,15 +1,9 @@
 backend:
-  name: github
-  repo: Rui-RanYu/Rui-RanYu.github.io
-  branch: main
-  # GitHub Pages uses this for authentication
-  site_domain: rui-ranyu.github.io
+  name: test-repo
 
 media_folder: "static/images"
 public_folder: "/images"
 
-# Enable local development mode
-local_backend: true
 
 collections:
   - name: "pages"
