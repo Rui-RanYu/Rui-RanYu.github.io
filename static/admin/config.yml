@@ -1,0 +1,81 @@
+backend:
+  name: github
+  repo: Rui-RanYu/Rui-RanYu.github.io
+  branch: main
+  # GitHub Pages uses this for authentication
+  site_domain: rui-ranyu.github.io
+
+media_folder: "static/images"
+public_folder: "/images"
+
+# Enable local development mode
+local_backend: true
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "About Page"
+        name: "about"
+        file: "content/about.md"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Layout", name: "layout", widget: "hidden", default: "single"}
+          - {label: "URL", name: "url", widget: "hidden", default: "/about/"}
+          - {label: "Summary", name: "summary", widget: "string"}
+          - {label: "Show TOC", name: "ShowToc", widget: "boolean", default: true}
+          - {label: "Show Breadcrumbs", name: "ShowBreadCrumbs", widget: "boolean", default: false}
+          - {label: "Body", name: "body", widget: "markdown"}
+
+      - label: "Research Page"
+        name: "research"
+        file: "content/research/_index.md"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Layout", name: "layout", widget: "hidden", default: "single"}
+          - {label: "URL", name: "url", widget: "hidden", default: "/research/"}
+          - {label: "Summary", name: "summary", widget: "string"}
+          - {label: "Show TOC", name: "ShowToc", widget: "boolean", default: true}
+          - {label: "TOC Open", name: "TocOpen", widget: "boolean", default: true}
+          - {label: "Show Breadcrumbs", name: "ShowBreadCrumbs", widget: "boolean", default: false}
+          - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "posts"
+    label: "Blog Posts"
+    folder: "content/posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Draft", name: "draft", widget: "boolean", default: false}
+      - {label: "Tags", name: "tags", widget: "list", required: false}
+      - {label: "Categories", name: "categories", widget: "list", required: false}
+      - {label: "Summary", name: "summary", widget: "text", required: false}
+      - {label: "Cover Image", name: "cover", widget: "object", required: false, fields: [
+          {label: "Image", name: "image", widget: "image", required: false},
+          {label: "Alt", name: "alt", widget: "string", required: false},
+          {label: "Caption", name: "caption", widget: "string", required: false}
+        ]}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "config"
+    label: "Site Configuration"
+    files:
+      - label: "Hugo Config"
+        name: "hugo_config"
+        file: "hugo.toml"
+        fields:
+          - {label: "Base URL", name: "baseURL", widget: "string"}
+          - {label: "Language Code", name: "languageCode", widget: "string", default: "en"}
+          - {label: "Site Title", name: "title", widget: "string"}
+          - {label: "Theme", name: "theme", widget: "hidden", default: "PaperMod"}
+          - label: "Params"
+            name: "params"
+            widget: "object"
+            fields:
+              - {label: "Author", name: "author", widget: "string"}
+              - {label: "Description", name: "description", widget: "text"}
+              - {label: "Keywords", name: "keywords", widget: "list"}
+              - {label: "Default Theme", name: "defaultTheme", widget: "select", options: ["light", "dark", "auto"]}
+
