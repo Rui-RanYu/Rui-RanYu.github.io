@@ -33,17 +33,37 @@ h1, h2, h3, h4, h5, h6 {
     background: #ffffff !important;
     border-bottom: 1px solid var(--border-color);
     box-shadow: var(--shadow-subtle);
+    transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .dark .header {
     background: #1a1a1a !important;
-    border-bottom-color: #333;
+    border-bottom-color: #333 !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-/* Logo */
+/* Logo - Dark mode support */
 .logo {
     font-weight: 600;
     color: var(--primary-color);
+}
+
+.dark .logo {
+    color: #e0e0e0 !important;
+}
+
+/* Menu items - Dark mode support */
+.dark #menu a {
+    color: #e0e0e0 !important;
+}
+
+.dark #menu a:hover {
+    color: #ffffff !important;
+}
+
+/* Theme toggle button */
+.dark #theme-toggle {
+    color: #e0e0e0 !important;
 }
 
 /* Professional Profile Image */
@@ -236,6 +256,36 @@ section {
 .dark .footer {
     background: #1a1a1a;
     border-top-color: #333;
+}
+
+.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
+    color: #e0e0e0 !important;
+}
+
+.dark .post-content strong {
+    color: #ffffff;
+}
+
+.dark body {
+    background: #0d0d0d !important;
+    color: #d0d0d0;
+}
+
+.dark .main {
+    background: #0d0d0d !important;
+}
+
+.dark .post-content a {
+    color: #5b9bd5;
+}
+
+.dark .post-content a:hover {
+    border-bottom-color: #5b9bd5;
+}
+
+/* Dark mode for profile image border */
+.dark .about-page img[alt="Ruiran Yu"] {
+    border-color: #444;
 }
 
 /* Selection */

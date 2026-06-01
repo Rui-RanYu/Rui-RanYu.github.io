@@ -12,7 +12,7 @@ ShowBreadCrumbs: false
     <img src="/images/photo_ruiran.jpg" alt="Ruiran Yu" style="width: 200px; border-radius: 4px; border: 1px solid #dee2e6;">
   </div>
   <div>
-    <h2 style="margin-top: 0;">Ruiran Yu</h2>
+    <h2 style="margin-top: 0;">Ruiran Yu <span style="font-size: 0.85em; color: #666;">(余睿然)</span></h2>
     <p><strong>Senior AI Data Scientist</strong><br>
     Procter & Gamble</p>
     <p><strong>Education:</strong> Ph.D. in Software Engineering<br>
