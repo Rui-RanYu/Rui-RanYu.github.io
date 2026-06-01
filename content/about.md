@@ -38,10 +38,7 @@ My research focuses on: Deep Learning, Meta-Learning, Agentic AI, Evolutionary A
 
 ## Professional Experience
 
-**Senior AI Data Scientist** | Procter & Gamble | Current
-- Developing AI/ML solutions for autonomous AI agents
-- Leading business intelligence initiatives
-- Applying advanced optimization techniques to supply chain problems
+**Senior AI Data Scientist** | Procter & Gamble | Current | Developing AI/ML solutions for autonomous AI agents, leading business intelligence initiatives, and applying advanced optimization techniques to supply chain problems.
 
 ## Advisory and Leadership Roles
 
