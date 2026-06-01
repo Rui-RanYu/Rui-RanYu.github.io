@@ -36,6 +36,17 @@ buildExpired = false
   hideSummary = false
   showtoc = true
 
+  [params.homeInfoParams]
+    Title = "Ruiran Yu"
+    Content = """
+Senior AI Data Scientist at Procter & Gamble
+
+Ph.D. in Software Engineering, South China University of Technology
+
+Research interests: Evolutionary Computation, Deep Learning, Combinatorial Optimization
+
+IEEE Young Professional | Think Tank Expert | PSM II & PSPO II Certified
+"""
 
   [[params.socialIcons]]
     name = "github"
@@ -71,32 +82,32 @@ buildExpired = false
 [menu]
   [[menu.main]]
     identifier = "about"
-    name = "🙋 About"
+    name = "About"
     url = "/about/"
     weight = 1
   [[menu.main]]
     identifier = "research"
-    name = "🔬 Research"
+    name = "Research"
     url = "/research/"
     weight = 2
   [[menu.main]]
     identifier = "posts"
-    name = "📝 Blog"
+    name = "Blog"
     url = "/posts/"
     weight = 3
   [[menu.main]]
     identifier = "categories"
-    name = "📂 Categories"
+    name = "Categories"
     url = "/categories/"
     weight = 4
   [[menu.main]]
     identifier = "tags"
-    name = "🏷️ Tags"
+    name = "Tags"
     url = "/tags/"
     weight = 5
   [[menu.main]]
     identifier = "search"
-    name = "🔍 Search"
+    name = "Search"
     url = "/search/"
     weight = 6
 

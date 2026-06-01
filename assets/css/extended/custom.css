@@ -318,52 +318,54 @@ pre code {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .home-info {
-        padding: 2rem 1.5rem;
-    }
-
-    .post-entry {
-        margin-bottom: 1.5rem;
+    .two-column {
+        grid-template-columns: 1fr;
     }
 }
 
-/* Dark Mode Enhancements */
+/* Dark Mode */
 .dark .post-entry {
-    background: rgba(255, 255, 255, 0.05);
-    border-color: rgba(255, 255, 255, 0.1);
-}
-
-.dark .post-content h3 {
-    background: linear-gradient(135deg, rgba(102, 126, 234, 0.2) 0%, rgba(118, 75, 162, 0.2) 100%);
+    background: #1a1a1a;
+    border-color: #333;
 }
 
 .dark code {
-    background: linear-gradient(135deg, rgba(102, 126, 234, 0.2) 0%, rgba(118, 75, 162, 0.2) 100%);
-    border-color: rgba(102, 126, 234, 0.3);
+    background: #2a2a2a;
+    border-color: #444;
 }
 
-/* Loading Animation */
-@keyframes pulse {
-    0%, 100% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0.5;
-    }
+.dark .footer {
+    background: #1a1a1a;
+    border-top-color: #333;
 }
 
-.loading {
-    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-}
-
-/* Selection Color */
+/* Selection */
 ::selection {
-    background: rgba(102, 126, 234, 0.3);
-    color: inherit;
+    background: var(--accent-color);
+    color: white;
 }
 
-/* Smooth Transitions for Theme Switch */
-* {
-    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+/* Remove Animations */
+.post-entry,
+.post-content > * {
+    animation: none;
+}
+
+/* Increase Information Density */
+body {
+    font-size: 15px;
+}
+
+.post-content {
+    line-height: 1.6;
+}
+
+/* Compact Header */
+.post-header {
+    margin-bottom: 1rem;
+}
+
+.post-title {
+    margin-bottom: 0.5rem;
 }
 
