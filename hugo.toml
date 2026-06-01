@@ -79,9 +79,9 @@ Writing about machine learning, optimization, data engineering, and life.
 
 [menu]
   [[menu.main]]
-    identifier = "posts"
-    name = "📝 Blog"
-    url = "/posts/"
+    identifier = "about"
+    name = "🙋 About"
+    url = "/about/"
     weight = 1
   [[menu.main]]
     identifier = "research"
@@ -89,19 +89,19 @@ Writing about machine learning, optimization, data engineering, and life.
     url = "/research/"
     weight = 2
   [[menu.main]]
+    identifier = "posts"
+    name = "📝 Blog"
+    url = "/posts/"
+    weight = 3
+  [[menu.main]]
     identifier = "categories"
     name = "📂 Categories"
     url = "/categories/"
-    weight = 3
+    weight = 4
   [[menu.main]]
     identifier = "tags"
     name = "🏷️ Tags"
     url = "/tags/"
-    weight = 4
-  [[menu.main]]
-    identifier = "about"
-    name = "🙋 About"
-    url = "/about/"
     weight = 5
   [[menu.main]]
     identifier = "search"
