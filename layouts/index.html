@@ -1,0 +1,25 @@
+{{ define "main" }}
+{{- $aboutPage := .Site.GetPage "/about" }}
+{{- if $aboutPage }}
+<article class="post-single">
+  <header class="post-header">
+    {{ partial "breadcrumbs.html" . }}
+    <h1 class="post-title">{{ $aboutPage.Title }}</h1>
+    {{- if $aboutPage.Description }}
+    <div class="post-description">{{ $aboutPage.Description }}</div>
+    {{- end }}
+  </header>
+
+  <div class="post-content">
+    {{ $aboutPage.Content }}
+  </div>
+
+  <footer class="post-footer">
+    {{- if .Site.Params.ShowShareButtons }}
+    {{ partial "share-icons.html" . }}
+    {{- end }}
+  </footer>
+</article>
+{{- end }}
+{{ end }}
+
