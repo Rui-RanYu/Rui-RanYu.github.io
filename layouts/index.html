@@ -2,22 +2,20 @@
 {{- $aboutPage := .Site.GetPage "/about" }}
 {{- if $aboutPage }}
 <article class="post-single">
+  {{- if not (.Param "hideMeta") }}
   <header class="post-header">
-    {{ partial "breadcrumbs.html" . }}
     <h1 class="post-title">{{ $aboutPage.Title }}</h1>
-    {{- if $aboutPage.Description }}
-    <div class="post-description">{{ $aboutPage.Description }}</div>
-    {{- end }}
   </header>
+  {{- end }}
+  {{- if $aboutPage.Params.ShowToc }}
+  {{- partial "toc.html" $aboutPage }}
+  {{- end }}
 
   <div class="post-content">
-    {{ $aboutPage.Content }}
+    {{- $aboutPage.Content | safeHTML }}
   </div>
 
   <footer class="post-footer">
-    {{- if .Site.Params.ShowShareButtons }}
-    {{ partial "share-icons.html" . }}
-    {{- end }}
   </footer>
 </article>
 {{- end }}

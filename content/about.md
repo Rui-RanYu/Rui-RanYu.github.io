@@ -42,19 +42,15 @@ My research focuses on: Deep Learning, Meta-Learning, Agentic AI, Evolutionary A
 
 ## Advisory and Leadership Roles
 
-**Think Tank Expert** | Guangzhou Software Industry Association (广州市软件行业协会)
-- Providing strategic guidance on software development and AI technologies
+**Institutional Expert** | Guangzhou Software Industry Association (广州市软件行业协会) | Providing strategic guidance on software development and AI technologies
 
-**Think Tank Expert** | Guangzhou Market Supervision Administration (市场监督管理局)
-- Contributing expertise in technology standards and market regulation
+**Institutional Expert** | Guangzhou Market Supervision Administration (市场监督管理局) | Contributing expertise in technology standards and market regulation
 
-**Think Tank Expert** | Guangzhou Bureau of Industry and Information Technology (工业与信息化局)
-- Advising on industrial digitalization and information technology strategy
+**Institutional Expert** | Guangzhou Bureau of Industry and Information Technology (工业与信息化局) | Advising on industrial digitalization and information technology strategy
 
 ## Professional Memberships
 
-**IEEE Young Professional** | Institute of Electrical and Electronics Engineers
-- Active member contributing to the advancement of technology and engineering
+**IEEE Young Professional** | Institute of Electrical and Electronics Engineers | Active member contributing to the advancement of technology and engineering
 
 ## Professional Certifications
 
