@@ -36,7 +36,8 @@ h1, h2, h3, h4, h5, h6 {
     transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
-.dark .header {
+.dark .header,
+[data-theme="dark"] .header {
     background: #1a1a1a !important;
     border-bottom-color: #333 !important;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
@@ -48,21 +49,25 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--primary-color);
 }
 
-.dark .logo {
+.dark .logo,
+[data-theme="dark"] .logo {
     color: #e0e0e0 !important;
 }
 
 /* Menu items - Dark mode support */
-.dark #menu a {
+.dark #menu a,
+[data-theme="dark"] #menu a {
     color: #e0e0e0 !important;
 }
 
-.dark #menu a:hover {
+.dark #menu a:hover,
+[data-theme="dark"] #menu a:hover {
     color: #ffffff !important;
 }
 
 /* Theme toggle button */
-.dark #theme-toggle {
+.dark #theme-toggle,
+[data-theme="dark"] #theme-toggle {
     color: #e0e0e0 !important;
 }
 
@@ -115,7 +120,8 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0.75rem;
 }
 
-.dark .post-entry {
+.dark .post-entry,
+[data-theme="dark"] .post-entry {
     background: #1a1a1a;
     border-color: #333;
 }
@@ -243,48 +249,59 @@ section {
 }
 
 /* Dark Mode */
-.dark .post-entry {
+.dark .post-entry,
+[data-theme="dark"] .post-entry {
     background: #1a1a1a;
     border-color: #333;
 }
 
-.dark code {
+.dark code,
+[data-theme="dark"] code {
     background: #2a2a2a;
     border-color: #444;
 }
 
-.dark .footer {
+.dark .footer,
+[data-theme="dark"] .footer {
     background: #1a1a1a;
     border-top-color: #333;
 }
 
-.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
+.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6,
+[data-theme="dark"] h1, [data-theme="dark"] h2, [data-theme="dark"] h3,
+[data-theme="dark"] h4, [data-theme="dark"] h5, [data-theme="dark"] h6 {
     color: #e0e0e0 !important;
 }
 
-.dark .post-content strong {
+.dark .post-content strong,
+[data-theme="dark"] .post-content strong {
     color: #ffffff;
 }
 
-.dark body {
+.dark body,
+[data-theme="dark"] body {
     background: #0d0d0d !important;
     color: #d0d0d0;
 }
 
-.dark .main {
+.dark .main,
+[data-theme="dark"] .main {
     background: #0d0d0d !important;
 }
 
-.dark .post-content a {
+.dark .post-content a,
+[data-theme="dark"] .post-content a {
     color: #5b9bd5;
 }
 
-.dark .post-content a:hover {
+.dark .post-content a:hover,
+[data-theme="dark"] .post-content a:hover {
     border-bottom-color: #5b9bd5;
 }
 
 /* Dark mode for profile image border */
-.dark .about-page img[alt="Ruiran Yu"] {
+.dark .about-page img[alt="Ruiran Yu"],
+[data-theme="dark"] .about-page img[alt="Ruiran Yu"] {
     border-color: #444;
 }
 
