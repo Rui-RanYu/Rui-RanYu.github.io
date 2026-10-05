@@ -80,25 +80,10 @@ buildExpired = false
     url = "/research/"
     weight = 2
   [[menu.main]]
-    identifier = "posts"
-    name = "Blog"
-    url = "/posts/"
-    weight = 3
-  [[menu.main]]
-    identifier = "categories"
-    name = "Categories"
-    url = "/categories/"
-    weight = 4
-  [[menu.main]]
-    identifier = "tags"
-    name = "Tags"
-    url = "/tags/"
-    weight = 5
-  [[menu.main]]
     identifier = "search"
     name = "Search"
     url = "/search/"
-    weight = 6
+    weight = 3
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
