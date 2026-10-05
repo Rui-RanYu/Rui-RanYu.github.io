@@ -12,6 +12,10 @@ ShowBreadCrumbs: false
 
 ### Conference Papers
 
+Ripple: Coordination-Free Message Scheduling for Multi-Agent LLM Workflows at the IoT Edge. *ACM MobiHoc 2026*.
+
+ProbeGuard, Budgeted Active Probing for Safe LLM Service Recomposition under Silent Semantic Drift. *ACM MobiHoc 2026*.
+
 **Yu, R.** CriticalFlow: Dependency-Aware Transport Scheduling for Multi-Agent LLM Systems. *2026 IEEE International Conference on Network Protocols (ICNP)*. (First author, corresponding author). A lightweight transport-scheduling layer that exposes the workflow DAG structure and co-schedules messages by remaining work and critical path to resolve message contention in multi-agent LLM systems.
 
 **Yu, R.** OrbitCC: Ephemeris-Aware Congestion Control for LEO Satellite Networks. *2026 IEEE International Conference on Network Protocols (ICNP)*. (First author, corresponding author). A congestion-control algorithm that leverages ephemeris data to predict geometric RTT, subtracting deterministic geometric delay from measured RTT to accurately recover queuing delay.
