@@ -12,9 +12,9 @@ ShowBreadCrumbs: false
 
 ### Conference Papers
 
-Ripple: Coordination-Free Message Scheduling for Multi-Agent LLM Workflows at the IoT Edge. *ACM MobiHoc 2026*.
+Ripple: Coordination-Free Message Scheduling for Multi-Agent LLM Workflows at the IoT Edge. *27th ACM International Symposium on Theory, Algorithmic Foundations, and Protocol Design for Mobile Networks and Mobile Computing (MobiHoc 2026)*. A coordination-free message scheduler for multi-agent LLM workflows at the IoT edge, designed to schedule agent messages without centralized coordination.
 
-ProbeGuard, Budgeted Active Probing for Safe LLM Service Recomposition under Silent Semantic Drift. *ACM MobiHoc 2026*.
+ProbeGuard, Budgeted Active Probing for Safe LLM Service Recomposition under Silent Semantic Drift. *27th ACM International Symposium on Theory, Algorithmic Foundations, and Protocol Design for Mobile Networks and Mobile Computing (MobiHoc 2026)*. A budget-aware active-probing framework that allocates limited probes to detect silent semantic drift and assess safety before LLM services are recomposed.
 
 **Yu, R.** CriticalFlow: Dependency-Aware Transport Scheduling for Multi-Agent LLM Systems. *2026 IEEE International Conference on Network Protocols (ICNP)*. (First author, corresponding author). A lightweight transport-scheduling layer that exposes the workflow DAG structure and co-schedules messages by remaining work and critical path to resolve message contention in multi-agent LLM systems.
 
